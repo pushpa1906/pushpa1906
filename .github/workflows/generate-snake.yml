@@ -20,13 +20,13 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Generate contribution snake
+      - name: Generate green contribution snake
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: pushpa1906
           outputs: |
-            dist/github-snake.svg?color_snake=%238B5E9F&color_dots=%2318121F,%233C2450,%235B2C6F,%238B5E9F,%23C9B6E4
-            dist/github-snake-dark.svg?color_snake=%234DE3FF&color_dots=%2318121F,%233C2450,%235B2C6F,%238B5E9F,%23C9B6E4
+            dist/github-snake.svg?color_snake=%2339D353&color_dots=%2318121F,%238B5E9F,%23C9B6E4,%2339D353,%23F7F3FF
+            dist/github-snake-dark.svg?color_snake=%2339D353&color_dots=%2318121F,%238B5E9F,%23C9B6E4,%2339D353,%23F7F3FF
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
